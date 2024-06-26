@@ -27,8 +27,8 @@ $products = [
     $superosso = new Toy('osso per cane', 8.9, 'dog-toy01.jpg', 'spugna'),
 
     //* lettni o cuccie:
-    $dolcecuccia = new Bed('cuccia per cane', 45.90, 'dog-bad01.jpg', 'grande'),
-    $sofficeletto = new Bed('lettino per gatto', 25.90, 'cat-bed01.png', 'media'),
+    $dolcecuccia = new Bed('cuccia per cane', 45.90, 'dog-bed01.jpg', 'grande'),
+    $sofficeletto = new Bed('lettino per gatto', 25.90, 'cat-bed01.jpg', 'media'),
 
 ];
 // var_dump($prodacts);
@@ -58,6 +58,7 @@ $sofficeletto -> setAgeCategory($puppy);
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,8 +69,8 @@ $sofficeletto -> setAgeCategory($puppy);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- style -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="./style.css">
+
     <title>Arca Shop</title>
 </head>
 
@@ -90,6 +91,8 @@ $sofficeletto -> setAgeCategory($puppy);
                     <div class="col-6 card">
                         <img src="<?php echo './img/'.$product -> getImage() ?>" alt="">
                         <h2><?php echo $product -> getTitle(); ?></h2>
+                        <h4>€ <?php echo $product -> getPrice(); ?></h4>
+                        <p><?php echo $product -> getAgeCategory() -> getName(); ?></p>
                     </div>
                 <?php endforeach ?>
 
