@@ -1,6 +1,6 @@
 <?php
 
-//? classe per l'eta della categoria:
+//? classe per l'età della categoria:
 
 class AgeCategory {
     private string $name;

@@ -27,7 +27,7 @@ $prodacts = [
     $superosso = new Toy('osso per cane', 8.9, 'dog-toy01.jpg', 'spugna'),
 
     //* lettni o cuccie:
-    $dolcecuccia = new Bed('ciccia per cani', 45.90, 'dog-bad01.jpg', 'grande'),
+    $dolcecuccia = new Bed('cuccia per cane', 45.90, 'dog-bad01.jpg', 'grande'),
     $sofficeletto = new Bed('lettino per gatto', 25.90, 'cat-bed01.png', 'media'),
 
 ];
