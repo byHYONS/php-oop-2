@@ -17,7 +17,7 @@ $puppy = new AgeCategory('cucciolo');
 $adult = new AgeCategory('adulto');
 
 //? prodotti:
-$prodacts = [
+$products = [
     //* cibo:
     $goldcrock = new Food('croccantini per cane', 19.90, 'dog-food01.jpg', 'manzo'),
     $silvercrock = new Food('croccantini per gatto', 12.50, 'cat-food01.jpg', 'pollo'),
@@ -31,7 +31,7 @@ $prodacts = [
     $sofficeletto = new Bed('lettino per gatto', 25.90, 'cat-bed01.png', 'media'),
 
 ];
-var_dump($prodacts);
+// var_dump($prodacts);
 
 //? assegno ai prodotti creati le categorie:
 $goldcrock -> setAnimalCategory($dog);
@@ -52,5 +52,58 @@ $dolcecuccia -> setAgeCategory($adult);
 $sofficeletto -> setAnimalCategory($cat);
 $sofficeletto -> setAgeCategory($puppy);
 
-var_dump($goldcrock);
-var_dump($sofficeletto);
+// var_dump($goldcrock);
+// var_dump($sofficeletto);
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Arca Shop</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h2>Arca Shop</h2>
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <main>
+        <div class="container mt mb">
+            <div class="row">
+
+                <?php foreach ($products as $product): ?>
+                    <div class="col-6 card">
+                        <img src="<?php echo './img/'.$product -> getImage() ?>" alt="">
+                        <h2><?php echo $product -> getTitle(); ?></h2>
+                    </div>
+                <?php endforeach ?>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h6>© byHYONS™ | 2024</h6>
+        </div>
+    
+</body>
+</html>
