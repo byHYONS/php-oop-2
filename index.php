@@ -34,4 +34,23 @@ $prodacts = [
 var_dump($prodacts);
 
 //? assegno ai prodotti creati le categorie:
-// $goldcrock -> 
+$goldcrock -> setAnimalCategory($dog);
+$goldcrock -> setAgeCategory($puppy);
+
+$silvercrock -> setAnimalCategory($cat);
+$silvercrock -> setAgeCategory($adult);
+
+$superpalla -> setAnimalCategory($cat);
+$superpalla -> setAgeCategory($puppy);
+
+$superosso -> setAnimalCategory($dog);
+$superosso -> setAgeCategory($adult);
+
+$dolcecuccia -> setAnimalCategory($dog);
+$dolcecuccia -> setAgeCategory($adult);
+
+$sofficeletto -> setAnimalCategory($cat);
+$sofficeletto -> setAgeCategory($puppy);
+
+var_dump($goldcrock);
+var_dump($sofficeletto);

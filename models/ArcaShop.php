@@ -1,8 +1,12 @@
 <?php
 
+//? importo file:
+require_once __DIR__ . '/CategoryTrait.php';
+
 //? classe padre ArcaShop prodotti:
 class ArcaShop {
 
+    use CategoryTrait;
 
     private string $title;
     private float $price;
