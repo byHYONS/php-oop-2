@@ -2,7 +2,7 @@
 
 //? classe prodotto cibo gusto:
 
-class Food extends AnimalCategory {
+class Food extends ArcaShop {
 
     private string $flavor;
 
