@@ -5,7 +5,7 @@ class ArcaShop {
 
 
     private string $title;
-    private int $price;
+    private float $price;
     private string $image;
 
     //* costruttore:
@@ -22,7 +22,7 @@ class ArcaShop {
     }
 
     //* prezzo prodotto:
-    public function getPrice(): string {
+    public function getPrice(): float {
         return $this -> price;
     }
 

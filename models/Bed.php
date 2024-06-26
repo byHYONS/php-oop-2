@@ -2,7 +2,7 @@
 
 //? classe prodotto lettino taglia:
 
-class Bad extends ArcaShop {
+class Bed extends ArcaShop {
 
     private string $size;
 
